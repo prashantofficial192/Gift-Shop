@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+
+<body onload="SetupImageHover()">
+    <header class="navbar">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="navigations">
+            <div class="nav-title">
+                <h1>JSY</h1>
+            </div>
+            <div class="nav-links">
+                <li><a href="#">Home & Living</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Stationery</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Gift Card</a></li>
+            </div>
+        </div>
+        <div class="btn">
+            <button>
+                <i class="fa-solid fa-user"></i> Log In
+            </button>
+            <button>Cart (0)</button>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>
+                The Gift of Good Style
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam asperiores quos, voluptates quas
+                architecto odit dolorum atque error soluta maxime modi magni magnam distinctio. Itaque rem omnis debitis
+                deserunt, voluptate, quia cum, pariatur odio numquam ex possimus architecto inventore doloribus
+                accusamus incidunt nesciunt quis officiis repellat soluta atque tempore accusantium.</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="banner-img"></div>
+    </div>
+    <div class="gift-title">
+        <h1>Gifts up to $50</h1>
+    </div>
+    <div class="slider">
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <div class="slide">
+            <img src="images/10007.jpg" alt="Patterned Socks">
+            <div class="caption">
+                <p>Geometric Phone Case</p>
+                <p>₹15.99</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/10021.jpg" alt="Blush Daily Planner">
+            <div class="caption">
+                <p>Geometric Phone Case</p>
+                <p>₹15.99</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/10013.jpg" alt="Abstract Tote Bag">
+            <div class="caption">
+                <p>Geometric Phone Case</p>
+                <p>₹15.99</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/10023.jpg" alt="Geometric Phone Case">
+            <div class="caption">
+                <p>Geometric Phone Case</p>
+                <p>₹15.99</p>
+            </div>
+        </div>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <div class="wave-box">
+        <div class="content">
+            <h1>Catch Our End of Season Sale</h1>
+            <button>Shop Now</button>
+        </div>
+        <div class="wave">
+            <!-- <img src="images/10003.svg" alt="">
+            <img src="images/10003.svg" alt="">
+            <img src="images/10003.svg" alt="">
+            <img src="images/10003.svg" alt="">
+            <img src="images/10003.svg" alt="">
+            <img src="images/10003.svg" alt=""> -->
+        </div>
+    </div>
+    <div class="gift-title2">
+        <h1>Home & Living Essentials</h1>
+    </div>
+    <div class="home-living">
+        <div class="box1">
+            <img src="images/10011.jpg">
+            <div class="box-content">
+                <h1>
+                    Geometric Bedding
+                </h1>
+                <p><s>₹99.99</s> ₹79.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="home-living">
+        <div class="box1">
+            <div class="box-content">
+                <h1>
+                    Coastal Plastes - Set of 4
+                </h1>
+                <p>₹25.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <img class="product-image" src="images/10010.jpg" data-hover-image="images/10009.jpg">
+        </div>
+    </div>
+    <div class="gift-title3">
+        <h1>Look Us Up @JSY</h1>
+    </div>
+    <div class="image-slider">
+        <div class="images">
+            <img src="images/10006.jpg">
+            <img src="images/10007.jpg">
+            <img src="images/10009.jpg">
+            <img src="images/10014.jpg">
+            <img src="images/10023.jpg">
+            <img src="images/10021.jpg">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-data">
+            <p>Shop</p>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Stationery</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Gift Card</a></li>
+        </div>
+        <div class="footer-data">
+            <p>Helpful Links</p>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+        </div>
+        <div class="footer-data">
+            <p>Contact</p>
+            <li><a href="#">info@mysite.com</a></li>
+            <li><a href="#">123-456-7890</a></li>
+            <li><a href="#">500 Terry Francine Street,</a></li>
+            <li><a href="#">San Francisco, CA 94158</a></li>
+        </div>
+        <div class="footer-data">
+            <p>Subscribe</p>
+            <p style="font-weight: 400; font-family: Arial, Helvetica, sans-serif;">Subscribe to our newsletter and be among the first to hear about new arrivals, events and special offers<p/>
+            Email
+            <input type="text">
+            <button>Subscribe</button>
+            <p style="font-weight: 400; text-align: left; font-family: Arial, Helvetica, sans-serif;">© 2035 by JSY. Powered and secured.</p>
+        </div>
+    </footer>
+    <div class="title">
+        <h1>JSY</h1>
+    </div>
+</body>
+
+</html>
